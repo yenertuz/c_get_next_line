@@ -12,6 +12,7 @@
 # define PE(p) ft_putendl(p)
 # define PN(p) ft_putnbr(p)
 # define NL ft_putchar('\n')
+# define ER(p) ft_error(p)
 
 
 typedef struct		s_ilst
