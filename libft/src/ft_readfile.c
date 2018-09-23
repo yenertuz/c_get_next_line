@@ -10,7 +10,7 @@ char	*ft_readfile(const char *p)
 	fd = open(p, O_RDONLY);
 	r = ft_strdup("");
 	if (fd == -1)
-		exit(-1);
+		ft_error("cannot open file");
 	while (read(fd, &b, 2400))
 	{
 		t = ft_strjoin(r, b);
