@@ -46,12 +46,16 @@ char	**ft_strsplit(const char *s, char c)
 	unsigned int	l;
 
 	l = count_words(s, c);
+	PS("word count: "); PN(l); NL;
 	r = MEMALLOC(char*, l + 1);
+	PS("mallocked for "); PN(l + 1); PE(" words");
 	i = 0;
 	while (i < l)
 	{
 		r[i] = get_word(&s, c);
+		PS("word #"); PN(i); NL; PS(r[i]); PE("@@->");
 		i++;
 	}
+	//r[i] = 0;
 	return (r);
 }
