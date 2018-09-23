@@ -1,2 +1,13 @@
 #!usr/bin/bash
-git clone https://github.com/yenertuz/ft001_gnl.git; rm -rRf ft001_gnl/src ft001_gnl/inc ft001_gnl/libft.a ft001_gnl/*.sh; cp -R src inc *.a *.sh ft001_gnl/; cd ft001_gnl; git add .; git commit -m "m"; git push
+
+git clone https://github.com/yenertuz/ft001_gnl.git
+cd ft001_gnl
+rm -rRf *.a *.sh inc src
+cp -R ../inc .
+cp -R ../src .
+cp -R ../*.* .
+git add .
+git commit -m "m"
+git push
+cd ..
+rm -rRf ft001_gnl.git
