@@ -32,4 +32,5 @@ int fd = open("test.txt", O_RDONLY);
 char *buffer;  
 ft_gnl(fd, &buffer);  
 printf(buffer);
+free(buffer); /* ft_gnl will allocate dynamic memory, which you need to free once done */
 ```
