@@ -27,7 +27,9 @@ gcc, sh, a terminal, `<unist.d>`, `<stdlib.h>`, `<string.h>`
 
 * example usage:
 
-`int fd = open("test.txt", O_RDONLY);`  
-`char \*buffer;`  
-`ft_gnl(fd, &buffer);`  
-`printf(buffer);`  
+```
+int fd = open("test.txt", O_RDONLY);  
+char \*buffer;  
+ft_gnl(fd, &buffer);  
+printf(buffer);
+```
