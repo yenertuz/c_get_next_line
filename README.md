@@ -22,12 +22,12 @@ gcc, sh, a terminal, `<unist.d>`, `<stdlib.h>`, `<string.h>`
 * To link the library into another project:  
 	1. clone this repository into your project `git clone https://github.com/yenertuz/mini_lib_c  libft`  
 	2. `sh relib.sh` to get the `libft.a` file  
-	3. while compiling your project, link this library: `gcc -Ilibft/inc/ -Llibft -lft *.c`  
+	3. while compiling your project, link this library: `gcc -Ilibft/inc/ -Llibft -lft *.c`   
 	
 
 * example usage:
 
-`int fd = open("test.txt", O_RDONLY);`
-`char \*buffer;`
-`ft_gnl(fd, &buffer);`
-`printf(buffer);`
+`int fd = open("test.txt", O_RDONLY);`  
+`char \*buffer;`  
+`ft_gnl(fd, &buffer);`  
+`printf(buffer);`  
