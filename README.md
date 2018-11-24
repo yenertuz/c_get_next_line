@@ -29,7 +29,7 @@ gcc, sh, a terminal, `<unist.d>`, `<stdlib.h>`, `<string.h>`
 
 ```
 int fd = open("test.txt", O_RDONLY);  
-char \*buffer;  
+char *buffer;  
 ft_gnl(fd, &buffer);  
 printf(buffer);
 ```
